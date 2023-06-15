@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상 클래스와 가상 요소 2</title>
+    <style>
+      /** 가상 클래스 */
+      li:first-child {
+        color: rebeccapurple;
+      }
+      li:last-child {
+        color: red;
+      }
+      li:nth-child(2) {
+        color: royalblue;
+      }
+      li:nth-last-child(2) {
+        color: olive;
+        background-color: pink;
+      }
+      /** 가상 요소  */
+      h1::before {/** h1 앞에 갖다놓겠다 */
+        content: url("images/html5.PNG"); 
+      }
+      h1::after {
+        content: " style programming"; font-size: small; font-weight: normal;
+      }
+    </style>
+</head>
+<body>
+  <h1>스타일 프로그래밍</h1>
+  <hr/>
+  <ul>
+    <li>웹 서버 설치하기</li>
+    <li>HTML5 문서 작성하기</li>
+    <li>CSS 스타일시트 작성하기</li>
+    <li>JS 프로그래밍하기</li>
+    <li>HTML DOM 프로그래밍하기</li>
+  </ul>
+</body>
+</html>

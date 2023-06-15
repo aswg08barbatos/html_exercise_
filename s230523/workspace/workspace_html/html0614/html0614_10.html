@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>select 태그</title>
+  </head>
+  <body>
+    <h2>회원님의 국적과 여행한 국가를 선택하시오</h2>
+    <hr />
+    <form action="" method="">
+      국적 :  
+      <select name="country">
+        <option value="south_korea">대한민국</option>
+        <option value="japan">일본</option>
+        <option value="usa">미국</option>
+        <option value="french" selected>프랑스</option>
+        <option value="england">영국</option>
+        <option value="etc">기타</option></select
+      ><br />
+      여행한 도시 :
+      <select name="city" multiple size="5">
+        <option value="seoul">서울</option>
+        <option value="tokyo" selected>동경</option>
+        <option value="Washington">워싱턴</option>
+        <option value="paris">파리</option>
+        <option value="london">런던</option>
+        <option value="others">기타</option>
+      </select>
+      <br />
+      <input type="submit" value="확인" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>이미지 태그</title>
+  </head>
+  <body>
+    <h2>이미지 태그 연습</h2>
+    <h3>1. 상대 경로</h3>
+    <!-- 1. html 문서와 같은 위치의 images 폴더 안의 이미지 -->
+    <img src="images/html5.png" />
+    <!-- 생략 -->
+    <img src="./images/css.PNG" />
+    <!-- ./ : 같은 위치, 현재 위치 / 안 생략, 정석 -->
+    <!-- 2. html 문서와 같은 위치  -->
+    <img src="js.PNG" width="200" height="150" />
+    <!-- 3.  -->
+    <img src="../images1/www.png" height="300" />
+    <!-- ../ : 1단계 상위 위치 -->
+    <img src="../html0612/images2/car.png" width="100" />
+
+    <img src="images/css.jpg" alt="html 이미지"/>
+
+    <h3>2. 절대 경로</h3>
+    <img src="c:/s230523/workspace/workspace_html/html0613/images/html5.png" />
+  </body>
+</html>

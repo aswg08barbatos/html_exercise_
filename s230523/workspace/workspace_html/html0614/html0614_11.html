@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>라디오 체크박스 활용</title>
+  </head>
+  <body>
+    <h2></h2>
+    <form action="html0614_01.html" method="GET">
+      <fieldset>
+        <legend>학생 이름</legend>
+        01. 학생의 이름을 입력하시오.<br />
+        <label for="user_name">이름</label> :
+        <input type="text" name="user_name" id="user_name" />
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>전공</legend>
+        02. 학생의 전공을 선택하시오. &nbsp; <br />
+        <label for="ma1">컴퓨터학과</label>
+        <input type="radio" name="major" value="m1" id="ma1" />&nbsp;
+        <br />
+        <label for="ma2">기계공학과</label>
+        <input type="radio" name="major" value="m2" id="ma2" />&nbsp;
+        <br />
+        <label for="ma3">시각디자인과</label>
+        <input type="radio" name="major" value="m3" id="ma3" /> &nbsp;
+        <br />
+        <label for="ma4">산업디자인과</label>
+        <input type="radio" name="major" value="m4" id="ma4" />&nbsp;
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>취미</legend>
+        03. 학생의 취미를 선택하시오. <br />
+        <label for="hb1">독서</label>
+        <input type="checkbox" name="hobby" value="h1" id="hb1" />&nbsp;
+        
+        <label for="hb2">쇼핑</label>
+        <input type="checkbox" name="hobby" value="h2" id="hb2" />&nbsp;
+        
+        <label for="hb3">게임</label>
+        <input type="checkbox" value="h3" id="hb3" />&nbsp;
+        
+        <label for="hb4">산책</label>
+        <input type="checkbox" name="hobby" value="h3" id="hb4" />&nbsp;
+        <label for="hb5">운동</label>
+        <input type="checkbox" name="hobby" value="h4" id="hb5" /> 
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>특기</legend>
+        04. 학생의 특기를 선택하시오. &nbsp;
+        <select name="special" multiple size="5">
+          <option value="">운동</option>
+          <option value="">독서</option>
+          <option value="">라이딩</option>
+          <option value="">게임</option>
+          <option value="">맛집 탐방</option></select>
+        </fieldset>
+        <br /><br />
+
+      <fieldset>
+        <legend>전송 및 취소</legend>
+        <input type="submit" value="제출" />
+        <input type="reset" value="취소" />
+      </fieldset>
+      <br />
+    </form>
+  </body>
+</html>

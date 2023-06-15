@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 정보_입력 태그 응용</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    hr {
+      /* width: 100%; */
+    }
+    #container {
+      width: 600px;
+      /* margin: 0 auto; */
+    }
+  </style>
+</head>
+<body>
+  <h2>회원 정보</h2>
+  <div id="container">
+      <hr/>
+      <form action="" method="">
+        <fieldset>
+          <legend>인적사항</legend>
+            <label for="user_name">이름:</label> 
+            <input type="text" placeholder="ID 입력요망" id="user_name"/> <br/>
+
+            <label for="identity_num">주민번호:</label> 
+            <input type="text" size="10" id="identity_num"/>-
+            <input type="password" size="10" id="identity_num"/> <br/>
+
+            <label for="country">국적:</label> 
+            <select name="" id="country">
+              <option value="kor">내국인(대한민국)</option>
+              <option value="usa">미국</option>
+              <option value="fr">프랑스</option>
+            </select>
+
+            <br/>
+            <label for="license">취득 자격증</label> :
+            <select name="" id="license">
+              <option value="">정보처리기사</option>
+              <option value="">제과기능사</option>
+              <option value="">제빵기능사</option>
+            </select><br/>
+          </fieldset>
+
+          <fieldset>
+            <legend>성별 & 학년</legend>
+            성별 :
+                  <input type="radio" name="sex" id="male"/> 
+                  <label for="male">남성 &nbsp;</label>
+                  <input type="radio" name="sex" id="female" checked/> 
+                  <label for="female"> 여성</label>
+            <br/>
+            학년 :
+                  <input type="radio" name="grade" id="grade1"/> 
+                  <label for="grade1">1학년 &nbsp;</label>
+                  <input type="radio" name="grade" id="grade2"/> 
+                  <label for="grade2">2학년</label> &nbsp;
+                  <input type="radio" name="grade" id="grade3" checked/> 
+                  <label for="grade3">3학년</label> &nbsp;
+                  <input type="radio" name="grade" id="grade4"/> 
+                  <label for="grade4">4학년</label> &nbsp;
+            <br/>
+
+          </fieldset>
+
+          <fieldset>
+            <legend for="hb">취미</legend>
+              <input type="checkbox" name="hb" id="hb1"/> 
+            <label for="hb1">독서</label> &nbsp;
+              <input type="checkbox" name="hb" id="hb2"/> 
+            <label for="hb2">바둑</label> &nbsp;
+              <input type="checkbox" name="hb" id="hb3"/> 
+            <label for="hb3">골프</label> &nbsp;
+              <input type="checkbox" name="hb" id="hb4"/> 
+            <label for="hb4">등산</label> &nbsp;
+              <input type="checkbox" name="hb" id="hb5"/> 
+            <label for="hb5">여행</label> &nbsp;
+              <input type="checkbox" name="hb" id="hb6"/> 
+            <label for="hb6">기타</label> &nbsp;
+          </fieldset>
+
+          <fieldset>
+            <legend><label for="memo">메모사항</label></legend>
+            <textarea name="" id="memo" cols="75" rows="3" placeholder="메모글을 남겨주세요"></textarea>
+          </fieldset>
+          <br/><br/>
+          <label for="file">첨부서류</label> : <input type="file" id="file"/>
+          <hr/>
+          <input type="submit" value="저장"/>
+          <input type="reset" value="다시 불러오기"/>
+          <!-- submit과 reset은 form 안에 써야 한다.
+          form이라는 태그는 다른 페이지로 값을 넘기기 위한
+        그런 중요한 태그이기 때문에 -->
+        </form>
+      </div>
+  </body>
+</html>

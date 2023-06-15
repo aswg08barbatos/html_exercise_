@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>input 태그의 종류</title>
+  </head>
+  <body>
+    <h2>input 태그의 종류</h2>
+    <form action="html0614_01.html" method="POST">
+      <fieldset>
+        <legend>이메일 입력 필드</legend>
+        이름 : <input type="text" /><br/>
+        이메일 : <input type="email" /><br/>
+      </fieldset><br/>
+
+      <fieldset>
+        <legend>URL 입력 필드</legend>
+        웹주소 : <input type="url" />
+      </fieldset><br/>
+
+      <fieldset>
+        <legend>전화번호 입력필드</legend>
+        전화번호 : <input type="tel" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" /><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>검색 입력필드</legend>
+        검색어 입력 : <input type="search" /><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>날짜 및 시간 입력필드</legend>
+        날짜 선택(년/월/일) : <input type="date" /><br/>
+        날짜 선택(년/월) : <input type="month" /><br/>
+        날짜 선택(년/주) : <input type="week" /><br/>
+        시간 선택 : <input type="time" /><br/>
+        날짜와 시간(년/월/일/시간/오전&오후) : <input type="datetime-local" />
+      </fieldset>
+
+      <fieldset>
+        <legend>전송 및 취소</legend>
+        <input type="submit" value="전송" />
+        <input type="reset" value="취소" />
+      </fieldset><br/>
+
+
+
+    </form>
+  </body>
+</html>
